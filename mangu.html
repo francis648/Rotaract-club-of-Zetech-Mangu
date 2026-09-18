@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotaract Club of Zetech Mang'u | Fellowship Through Service</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rotary: {
+                            blue: '#00246C',
+                            azure: '#005DAA',
+                            royal: '#17458F',
+                            gold: '#F7A81B',
+                            darkGold: '#E29B00',
+                            cranberry: '#D91B5C',
+                            darkCranberry: '#B01046',
+                            lightGrey: '#F8F9FA',
+                            darkGrey: '#4D4D4F'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                        serif: ['Roboto Slab', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #4D4D4F;
+            background-color: #FAFAFA;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .font-serif-title {
+            font-family: 'Roboto Slab', serif;
+        }
+        .rotary-gradient {
+            background: linear-gradient(135deg, #00246C 0%, #17458F 60%, #D91B5C 100%);
+        }
+        .rotary-gold-gradient {
+            background: linear-gradient(135deg, #F7A81B 0%, #E29B00 100%);
+        }
+        .rotaract-pink-gradient {
+            background: linear-gradient(135deg, #D91B5C 0%, #B01046 100%);
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 36, 108, 0.85), rgba(0, 36, 108, 0.88)), 
+                        url('file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Image 2026-09-18 at 1.30.02 PM.jpeg') center/cover no-repeat;
+        }
+    </style>
+</head>
+<body class="bg-rotary-lightGrey text-gray-800 antialiased selection:bg-rotary-cranberry selection:text-white">
+
+    <!-- Navigation Header & Utility Top Bar -->
+    <header class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
+        <!-- Top Bar Notice -->
+        <div class="bg-rotary-blue text-white text-xs sm:text-sm py-2 px-4">
+            <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+                <div class="flex items-center space-x-4">
+                    <span><i class="fa-solid fa-location-dot text-rotary-gold me-1"></i> Zetech University, Mang'u Campus</span>
+                    <span class="hidden md:inline"><i class="fa-regular fa-clock text-rotary-gold me-1"></i> Thursdays @ 4:30 PM </span>
+                </div>
+                <div class="flex items-center space-x-4 text-xs">
+                    <span class="text-rotary-gold font-semibold"><i class="fa-solid fa-award me-1"></i> Rotary District 9216</span>
+                    <a href="https://www.instagram.com/rac_zetechmangu?stkn=MW9tNXpxNnY1bDBxZQ==" target="_blank" class="hover:text-rotary-gold transition"><i class="fa-brands fa-instagram text-base"></i></a>
+                    <a href="https://www.tiktok.com/@rac_zetechmangu?_r=1&_t=ZS-99QAHPppQjB" target="_blank" class="hover:text-rotary-gold transition"><i class="fa-brands fa-tiktok text-base"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <img src="file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Image 2026-09-18 at 1.20.35 PM.jpeg" 
+                         alt="Rotaract Club of Zetech Mang'u Logo" 
+                         class="h-12 w-auto object-contain transition-transform group-hover:scale-105"
+                         onerror="this.onerror=null; this.src='https://placehold.co/150x50/00246C/FFF?text=Rotaract+Logo';">
+                    <div>
+                        <span class="block text-lg sm:text-xl font-extrabold text-rotary-blue tracking-tight leading-none">ROTARACT CLUB</span>
+                        <span class="block text-xs sm:text-sm font-semibold text-rotary-cranberry tracking-widest uppercase">Zetech Mang'u</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <div class="hidden lg:flex items-center space-x-7 font-semibold text-gray-700 text-sm">
+                    <a href="#home" class="hover:text-rotary-cranberry transition">Home</a>
+                    <a href="#about" class="hover:text-rotary-cranberry transition">About Us</a>
+                    <a href="#meetings" class="hover:text-rotary-cranberry transition">Meetings</a>
+                    <a href="#focus-areas" class="hover:text-rotary-cranberry transition">Areas of Focus</a>
+                    <a href="#four-way-test" class="hover:text-rotary-cranberry transition">4-Way Test</a>
+                    <a href="#gallery" class="hover:text-rotary-cranberry transition">Gallery & Media</a>
+                    <a href="#contact" class="hover:text-rotary-cranberry transition">Contact & Invite</a>
+                </div>
+
+                <!-- Call To Action -->
+                <div class="hidden lg:flex items-center space-x-3">
+                    <a href="#contact" class="px-5 py-2.5 rounded-full bg-rotary-cranberry hover:bg-rotary-darkCranberry text-white font-semibold text-sm transition shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-user-plus me-1"></i> Join Club
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-rotary-blue focus:outline-none p-2 rounded-lg hover:bg-gray-100">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Drawer -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4 border-t border-gray-100 pt-4 space-y-3 font-medium">
+                <a href="#home" class="block py-2 px-3 rounded-lg hover:bg-rotary-lightGrey text-rotary-blue font-semibold">Home</a>
+                <a href="#about" class="block py-2 px-3 rounded-lg hover:bg-rotary-lightGrey text-gray-700">About Us</a>
+                <a href="#meetings" class="block py-2 px-3 rounded-lg hover:bg-rotary-lightGrey text-gray-700">Meetings & Schedule</a>
+                <a href="#focus-areas" class="block py-2 px-3 rounded-lg hover:bg-rotary-lightGrey text-gray-700">Areas of Focus</a>
+                <a href="#four-way-test" class="block py-2 px-3 rounded-lg hover:bg-rotary-lightGrey text-gray-700">4-Way Test</a>
+                <a href="#gallery" class="block py-2 px-3 rounded-lg hover:bg-rotary-lightGrey text-gray-700">Gallery & Media</a>
+                <a href="#contact" class="block py-2 px-3 rounded-lg hover:bg-rotary-lightGrey text-gray-700">Contact & Invite</a>
+                <a href="#contact" class="block w-full text-center py-2.5 rounded-lg bg-rotary-cranberry text-white font-semibold shadow-md">Join Our Club</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative hero-bg text-white overflow-hidden py-20 lg:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-rotary-gold text-rotary-blue px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider shadow-md">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Fellowship Through Service • Zetech Mang'u</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight font-serif-title">
+                        Rotaract Club of <span class="text-rotary-gold">Zetech Mang'u</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-blue-100 max-w-2xl font-light leading-relaxed">
+                        Empowering young leaders, engaging in impactful community service, and building professional networks at Zetech University Mang'u Campus.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#meetings" class="w-full sm:w-auto text-center px-8 py-4 rounded-full bg-rotary-cranberry hover:bg-rotary-darkCranberry text-white font-bold text-base transition shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+                            <i class="fa-regular fa-calendar-check me-2"></i> Attend Thursday Meeting
+                        </a>
+                        <a href="#about" class="w-full sm:w-auto text-center px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold border border-white/30 backdrop-blur-sm transition">
+                            Discover Our Story <i class="fa-solid fa-arrow-right ms-2 text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Quick Badge -->
+                    <div class="pt-6 border-t border-white/20 flex items-center justify-center lg:justify-start space-x-6 text-xs sm:text-sm text-blue-100">
+                        <span class="flex items-center"><i class="fa-solid fa-users text-rotary-gold me-2 text-base"></i> 50+ Active Members</span>
+                        <span class="flex items-center"><i class="fa-solid fa-hand-holding-heart text-rotary-gold me-2 text-base"></i> 15+ Community Projects</span>
+                    </div>
+                </div>
+
+                <!-- Hero Image Card -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-2 rounded-2xl bg-rotary-gold/30 blur-lg transform rotate-2"></div>
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
+                            <img src="file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Image 2026-09-18 at 1.30.02 PM.jpeg" 
+                                 alt="Rotaract Members Fellowship" 
+                                 class="w-full h-80 sm:h-96 object-cover transform hover:scale-105 transition duration-500"
+                                 onerror="this.onerror=null; this.src='https://placehold.co/800x600/00246C/FFF?text=Rotaract+Zetech+Mangu';">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+                                <div class="text-white">
+                                    <p class="text-xs uppercase tracking-widest text-rotary-gold font-bold">Community Action</p>
+                                    <p class="font-bold text-lg">Empowering Change at Mang'u & Beyond</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meeting Callout Banner -->
+    <section id="meetings" class="-mt-10 relative z-20 max-w-6xl mx-auto px-4">
+        <div class="bg-white rounded-2xl shadow-2xl border-t-8 border-rotary-gold p-6 sm:p-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <div class="space-y-2 text-center md:text-left">
+                    <span class="bg-rotary-cranberry/10 text-rotary-cranberry text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        Weekly Fellowship
+                    </span>
+                    <h3 class="text-2xl font-bold text-rotary-blue font-serif-title">Join Our Next Meeting!</h3>
+                    <p class="text-sm text-gray-600">Open to all Zetech University students and guests passionate about service.</p>
+                </div>
+
+                <div class="space-y-4 border-y md:border-y-0 md:border-x border-gray-100 py-4 md:py-0 md:px-6">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-10 h-10 rounded-lg bg-rotary-blue/10 text-rotary-blue flex items-center justify-center flex-shrink-0">
+                            <i class="fa-regular fa-calendar-days text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase font-semibold">When We Meet</p>
+                            <p class="font-bold text-gray-800">Every Thursday</p>
+                            <p class="text-sm text-rotary-cranberry font-semibold">4:00 PM – 5:30 PM EAT</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start space-x-3">
+                        <div class="w-10 h-10 rounded-lg bg-rotary-gold/20 text-rotary-darkGold flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-location-dot text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase font-semibold">Where We Meet</p>
+                            <p class="font-bold text-gray-800">Zetech University</p>
+                            <p class="text-sm text-gray-600">Mang'u Campus, Main Hall / LH009</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center md:text-right space-y-3">
+                    <div class="inline-block p-3 bg-rotary-lightGrey rounded-xl text-xs text-gray-600 text-left w-full mb-2">
+                        <i class="fa-solid fa-circle-info text-rotary-blue me-1"></i>
+                        <span>Includes guest speakers, leadership workshops & project brainstorming!</span>
+                    </div>
+                    <a href="#contact" class="inline-block w-full sm:w-auto px-6 py-3 rounded-xl bg-rotary-blue hover:bg-rotary-royal text-white font-semibold text-sm transition shadow-md">
+                        Get Meeting Invitation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us / Our Story -->
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="inline-flex items-center space-x-2 text-rotary-cranberry font-bold text-sm tracking-widest uppercase">
+                        <span class="w-8 h-0.5 bg-rotary-cranberry"></span>
+                        <span>Our Story & Purpose</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-rotary-blue leading-tight font-serif-title">
+                        Bridging Education & Impact at Zetech Mang'u
+                    </h2>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Sponsored by Rotary International (District 9212), the <strong>Rotaract Club of Zetech Mang'u</strong> brings together energetic students and young professionals dedicated to creating positive change within our campus and the surrounding community.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Based at the vibrant Zetech University Mang'u Campus, our club empowers members to address real-world challenges through sustainable community service while sharpening leadership skills, building professional networks, and forming lifelong friendships.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-white border border-gray-100 shadow-sm">
+                            <i class="fa-solid fa-bullseye text-2xl text-rotary-cranberry mb-2"></i>
+                            <h4 class="font-bold text-gray-800">Our Mission</h4>
+                            <p class="text-xs text-gray-500 mt-1">To provide opportunities for young people to address community needs, build professional skills, and foster fellowship.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-white border border-gray-100 shadow-sm">
+                            <i class="fa-solid fa-eye text-2xl text-rotary-gold mb-2"></i>
+                            <h4 class="font-bold text-gray-800">Our Vision</h4>
+                            <p class="text-xs text-gray-500 mt-1">A world where youth actively drive impactful social change and sustainable development through service.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Visual Grid -->
+                <div class="relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Image 2026-09-18 at 1.29.35 PM.jpeg" 
+                             alt="Community Action & Service" 
+                             class="rounded-2xl shadow-md h-64 w-full object-cover transform hover:scale-102 transition"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/17458F/FFF?text=Service+Project';">
+                             
+                        <img src="file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Image 2026-09-18 at 1.31.59 PM.jpeg" 
+                             alt="Leadership and Team Bonding" 
+                             class="rounded-2xl shadow-md h-64 w-full object-cover mt-8 transform hover:scale-102 transition"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/D91B5C/FFF?text=Fellowship';">
+                    </div>
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-full shadow-2xl border-4 border-rotary-gold">
+                        <i class="fa-solid fa-hands-holding-circle text-4xl text-rotary-blue"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rotary Areas of Focus -->
+    <section id="focus-areas" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-rotary-cranberry font-bold text-sm tracking-widest uppercase">What We Do</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-rotary-blue mt-2 font-serif-title">Rotary Areas of Focus</h2>
+                <p class="text-gray-600 mt-3">Our club aligns its initiatives with Rotary International's key causes to maximize sustainable impact.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Focus 1 -->
+                <div class="p-8 rounded-2xl bg-rotary-lightGrey border border-gray-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-rotary-blue text-white flex items-center justify-center text-2xl mb-6 group-hover:bg-rotary-cranberry transition">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Environmental Action</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Tree planting drives around Mang'u, environmental awareness campaigns, and sustainable campus initiatives.
+                    </p>
+                </div>
+
+                <!-- Focus 2 -->
+                <div class="p-8 rounded-2xl bg-rotary-lightGrey border border-gray-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-rotary-blue text-white flex items-center justify-center text-2xl mb-6 group-hover:bg-rotary-cranberry transition">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Education & Literacy</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Mentorship programs for local schools, book donations, and youth empowerment talks across Kiambu County.
+                    </p>
+                </div>
+
+                <!-- Focus 3 -->
+                <div class="p-8 rounded-2xl bg-rotary-lightGrey border border-gray-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-rotary-blue text-white flex items-center justify-center text-2xl mb-6 group-hover:bg-rotary-cranberry transition">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Professional Growth</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Career talks, CV building workshops, public speaking practice, and networking with seasoned Rotarians.
+                    </p>
+                </div>
+
+                <!-- Focus 4 -->
+                <div class="p-8 rounded-2xl bg-rotary-lightGrey border border-gray-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-rotary-blue text-white flex items-center justify-center text-2xl mb-6 group-hover:bg-rotary-cranberry transition">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Health & Hygiene</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Medical camps, sanitary towel distribution drives, and mental health awareness workshops for students.
+                    </p>
+                </div>
+
+                <!-- Focus 5 -->
+                <div class="p-8 rounded-2xl bg-rotary-lightGrey border border-gray-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-rotary-blue text-white flex items-center justify-center text-2xl mb-6 group-hover:bg-rotary-cranberry transition">
+                        <i class="fa-solid fa-hand-holding-hand"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Community Economic Dev.</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Supporting vulnerable families, children's home visits, and local community outreach drives.
+                    </p>
+                </div>
+
+                <!-- Focus 6 -->
+                <div class="p-8 rounded-2xl bg-rotary-lightGrey border border-gray-100 hover:shadow-xl transition duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-rotary-blue text-white flex items-center justify-center text-2xl mb-6 group-hover:bg-rotary-cranberry transition">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Peacebuilding & Conflict</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Fostering diversity, inclusivity, and peaceful conflict resolution among university students.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rotary 4-Way Test Section -->
+    <section id="four-way-test" class="py-16 bg-rotary-blue text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-rotary-gold font-bold text-xs uppercase tracking-widest">Guiding Principles</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-rotary-gold mt-2 font-serif-title">The Rotary Four-Way Test</h2>
+            <p class="text-blue-100 max-w-2xl mx-auto mt-2 text-sm sm:text-base">Of the things we think, say, or do:</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border-t-4 border-rotary-gold text-center hover:bg-white/15 transition">
+                    <span class="text-3xl font-extrabold text-rotary-gold block mb-2">1st</span>
+                    <p class="text-lg font-semibold text-white">Is it the <br><strong class="text-rotary-gold uppercase">TRUTH</strong>?</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border-t-4 border-rotary-gold text-center hover:bg-white/15 transition">
+                    <span class="text-3xl font-extrabold text-rotary-gold block mb-2">2nd</span>
+                    <p class="text-lg font-semibold text-white">Is it <br><strong class="text-rotary-gold uppercase">FAIR</strong> to all concerned?</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border-t-4 border-rotary-gold text-center hover:bg-white/15 transition">
+                    <span class="text-3xl font-extrabold text-rotary-gold block mb-2">3rd</span>
+                    <p class="text-lg font-semibold text-white">Will it build <br><strong class="text-rotary-gold uppercase">GOODWILL</strong> & Better Friendships?</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border-t-4 border-rotary-gold text-center hover:bg-white/15 transition">
+                    <span class="text-3xl font-extrabold text-rotary-gold block mb-2">4th</span>
+                    <p class="text-lg font-semibold text-white">Will it be <br><strong class="text-rotary-gold uppercase">BENEFICIAL</strong> to all concerned?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section class="rotary-gold-gradient text-rotary-blue py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="space-y-1">
+                    <div class="text-4xl sm:text-5xl font-extrabold tracking-tight">50+</div>
+                    <div class="text-xs sm:text-sm font-bold uppercase tracking-wider">Active Members</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-4xl sm:text-5xl font-extrabold tracking-tight">15+</div>
+                    <div class="text-xs sm:text-sm font-bold uppercase tracking-wider">Projects Completed</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-4xl sm:text-5xl font-extrabold tracking-tight">1,000+</div>
+                    <div class="text-xs sm:text-sm font-bold uppercase tracking-wider">Lives Impacted</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-4xl sm:text-5xl font-extrabold tracking-tight">100%</div>
+                    <div class="text-xs sm:text-sm font-bold uppercase tracking-wider">Youth Fellowship</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unified Gallery & Media Section (Loaded with Your Local Images & Videos) -->
+    <section id="gallery" class="py-20 bg-rotary-lightGrey">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-rotary-cranberry font-bold text-sm tracking-widest uppercase">Visual Showcase</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-rotary-blue mt-2 font-serif-title">Photos & Video Highlights</h2>
+                <p class="text-gray-600 mt-3">Explore our latest activities, weekly fellowships, and video highlights directly from Mang'u Campus.</p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="flex justify-center space-x-2 sm:space-x-4 mb-10 overflow-x-auto pb-2">
+                <button onclick="filterGallery('all')" class="gallery-tab active px-5 py-2 rounded-full bg-rotary-blue text-white text-xs sm:text-sm font-semibold transition">All Media</button>
+                <button onclick="filterGallery('photos')" class="gallery-tab px-5 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 text-xs sm:text-sm font-semibold transition">Photos</button>
+                <button onclick="filterGallery('videos')" class="gallery-tab px-5 py-2 rounded-full bg-white text-gray-600 hover:bg-gray-100 text-xs sm:text-sm font-semibold transition">Videos</button>
+            </div>
+
+            <!-- Media Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
+                
+                <!-- Local Photo 1 (Logo Identity) -->
+                <div class="gallery-item photos bg-white rounded-2xl overflow-hidden shadow-md group border border-gray-100">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Image 2026-09-18 at 1.20.35 PM.jpeg" 
+                             alt="Rotaract Zetech Mang'u Official Identity" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/00246C/FFF?text=Club+Identity';">
+                        <div class="absolute inset-0 bg-rotary-blue/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center cursor-pointer" onclick="openLightbox('file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Image 2026-09-18 at 1.20.35 PM.jpeg', 'Rotaract Club of Zetech Mang\'u Official Brand Identity')">
+                            <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs font-bold text-rotary-blue uppercase">Club Identity</span>
+                        <h4 class="font-bold text-gray-800 text-base mt-1">Official Club Crest & Branding</h4>
+                        <p class="text-xs text-gray-500 mt-1">Proudly chartered under Rotary District 9212.</p>
+                    </div>
+                </div>
+
+                <!-- Local Photo 2 (Community Action) -->
+                <div class="gallery-item photos bg-white rounded-2xl overflow-hidden shadow-md group border border-gray-100">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Image 2026-09-18 at 1.29.35 PM.jpeg" 
+                             alt="Community Action & Service" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/17458F/FFF?text=Community+Service';">
+                        <div class="absolute inset-0 bg-rotary-blue/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center cursor-pointer" onclick="openLightbox('file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Image 2026-09-18 at 1.29.35 PM.jpeg', 'Community Outreach & Service Above Self')">
+                            <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs font-bold text-rotary-cranberry uppercase">Community Outreach</span>
+                        <h4 class="font-bold text-gray-800 text-base mt-1">Service Above Self in Action</h4>
+                        <p class="text-xs text-gray-500 mt-1">Impactful community outreach initiatives around Mang'u.</p>
+                    </div>
+                </div>
+
+                <!-- Local Photo 3 (Fellowship Meeting) -->
+                <div class="gallery-item photos bg-white rounded-2xl overflow-hidden shadow-md group border border-gray-100">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Image 2026-09-18 at 1.30.02 PM.jpeg" 
+                             alt="Weekly Fellowship Meeting" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/D91B5C/FFF?text=Weekly+Fellowship';">
+                        <div class="absolute inset-0 bg-rotary-blue/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center cursor-pointer" onclick="openLightbox('file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Image 2026-09-18 at 1.30.02 PM.jpeg', 'Thursday Weekly Fellowship Session at Zetech Mang\'u')">
+                            <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs font-bold text-rotary-gold uppercase">Thursday Fellowship</span>
+                        <h4 class="font-bold text-gray-800 text-base mt-1">Weekly Campus Gathering</h4>
+                        <p class="text-xs text-gray-500 mt-1">Members engaging in leadership and project planning.</p>
+                    </div>
+                </div>
+
+                <!-- Local Photo 4 (Bonding) -->
+                <div class="gallery-item photos bg-white rounded-2xl overflow-hidden shadow-md group border border-gray-100">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Image 2026-09-18 at 1.31.59 PM.jpeg" 
+                             alt="Leadership & Team Bonding" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                             onerror="this.onerror=null; this.src='https://placehold.co/600x400/E29B00/FFF?text=Team+Bonding';">
+                        <div class="absolute inset-0 bg-rotary-blue/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center cursor-pointer" onclick="openLightbox('file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Image 2026-09-18 at 1.31.59 PM.jpeg', 'Member Leadership Bonding & Networking')">
+                            <i class="fa-solid fa-magnifying-glass-plus text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs font-bold text-rotary-blue uppercase">Team Bonding</span>
+                        <h4 class="font-bold text-gray-800 text-base mt-1">Fellowship & Networking</h4>
+                        <p class="text-xs text-gray-500 mt-1">Building lifelong friendships and strong teamwork.</p>
+                    </div>
+                </div>
+
+                <!-- Local Video 1 (2.01.53 PM) -->
+                <div class="gallery-item videos bg-white rounded-2xl overflow-hidden shadow-md group border border-gray-100">
+                    <div class="relative overflow-hidden h-60 bg-gray-900">
+                        <video class="w-full h-full object-cover" muted loop onmouseover="this.play()" onmouseout="this.pause()">
+                            <source src="file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Video 2026-09-18 at 2.01.53 PM.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer" onclick="openVideoModal('file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Video 2026-09-18 at 2.01.53 PM.mp4', 'Rotaract Club Activity Highlight 1')">
+                            <div class="w-16 h-16 rounded-full bg-rotary-cranberry text-white flex items-center justify-center text-xl shadow-lg group-hover:scale-110 transition">
+                                <i class="fa-solid fa-play ms-1"></i>
+                            </div>
+                        </div>
+                        <span class="absolute top-3 right-3 bg-black/70 text-white text-xs px-2.5 py-1 rounded-md font-semibold"><i class="fa-solid fa-video me-1 text-rotary-gold"></i> Video</span>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs font-bold text-rotary-gold uppercase">Video Story</span>
+                        <h4 class="font-bold text-gray-800 text-base mt-1">Club Activity Highlight I</h4>
+                        <p class="text-xs text-gray-500 mt-1">Live coverage of our fellowship and impact events.</p>
+                    </div>
+                </div>
+
+                <!-- Local Video 2 (2.06.30 PM) -->
+                <div class="gallery-item videos bg-white rounded-2xl overflow-hidden shadow-md group border border-gray-100">
+                    <div class="relative overflow-hidden h-60 bg-gray-900">
+                        <video class="w-full h-full object-cover" muted loop onmouseover="this.play()" onmouseout="this.pause()">
+                            <source src="file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Video 2026-09-18 at 2.06.30 PM.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer" onclick="openVideoModal('file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Video 2026-09-18 at 2.06.30 PM.mp4', 'Rotaract Club Activity Highlight 2')">
+                            <div class="w-16 h-16 rounded-full bg-rotary-cranberry text-white flex items-center justify-center text-xl shadow-lg group-hover:scale-110 transition">
+                                <i class="fa-solid fa-play ms-1"></i>
+                            </div>
+                        </div>
+                        <span class="absolute top-3 right-3 bg-black/70 text-white text-xs px-2.5 py-1 rounded-md font-semibold"><i class="fa-solid fa-video me-1 text-rotary-gold"></i> Video</span>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs font-bold text-rotary-gold uppercase">Video Story</span>
+                        <h4 class="font-bold text-gray-800 text-base mt-1">Club Activity Highlight II</h4>
+                        <p class="text-xs text-gray-500 mt-1">Moments of service and vibrant youth engagement.</p>
+                    </div>
+                </div>
+
+                <!-- Local Video 3 (2.10.02 PM) -->
+                <div class="gallery-item videos bg-white rounded-2xl overflow-hidden shadow-md group border border-gray-100">
+                    <div class="relative overflow-hidden h-60 bg-gray-900">
+                        <video class="w-full h-full object-cover" muted loop onmouseover="this.play()" onmouseout="this.pause()">
+                            <source src="file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Video 2026-09-18 at 2.10.02 PM.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer" onclick="openVideoModal('file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Video 2026-09-18 at 2.10.02 PM.mp4', 'Rotaract Club Activity Highlight 3')">
+                            <div class="w-16 h-16 rounded-full bg-rotary-cranberry text-white flex items-center justify-center text-xl shadow-lg group-hover:scale-110 transition">
+                                <i class="fa-solid fa-play ms-1"></i>
+                            </div>
+                        </div>
+                        <span class="absolute top-3 right-3 bg-black/70 text-white text-xs px-2.5 py-1 rounded-md font-semibold"><i class="fa-solid fa-video me-1 text-rotary-gold"></i> Video</span>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs font-bold text-rotary-gold uppercase">Video Story</span>
+                        <h4 class="font-bold text-gray-800 text-base mt-1">Club Activity Highlight III</h4>
+                        <p class="text-xs text-gray-500 mt-1">Leadership moments and active project execution.</p>
+                    </div>
+                </div>
+
+                <!-- Local Video 4 (2.12.15 PM) -->
+                <div class="gallery-item videos bg-white rounded-2xl overflow-hidden shadow-md group border border-gray-100">
+                    <div class="relative overflow-hidden h-60 bg-gray-900">
+                        <video class="w-full h-full object-cover" muted loop onmouseover="this.play()" onmouseout="this.pause()">
+                            <source src="file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Video 2026-09-18 at 2.12.15 PM.mp4" type="video/mp4">
+                        </video>
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer" onclick="openVideoModal('file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Video 2026-09-18 at 2.12.15 PM.mp4', 'Rotaract Club Activity Highlight 4')">
+                            <div class="w-16 h-16 rounded-full bg-rotary-cranberry text-white flex items-center justify-center text-xl shadow-lg group-hover:scale-110 transition">
+                                <i class="fa-solid fa-play ms-1"></i>
+                            </div>
+                        </div>
+                        <span class="absolute top-3 right-3 bg-black/70 text-white text-xs px-2.5 py-1 rounded-md font-semibold"><i class="fa-solid fa-video me-1 text-rotary-gold"></i> Video</span>
+                    </div>
+                    <div class="p-4">
+                        <span class="text-xs font-bold text-rotary-gold uppercase">Video Story</span>
+                        <h4 class="font-bold text-gray-800 text-base mt-1">Club Activity Highlight IV</h4>
+                        <p class="text-xs text-gray-500 mt-1">Interactive member sessions and event recap.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Join / Invite Form -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-rotary-cranberry font-bold text-sm tracking-widest uppercase">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-rotary-blue font-serif-title">Ready to Make a Difference?</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Whether you are a student looking to join, an organization inviting us to partner on a service project, or a Rotarian visiting Mang'u Campus, we'd love to connect with you!
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-rotary-lightGrey text-rotary-blue flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Location</h4>
+                                <p class="text-sm text-gray-600">Zetech University, Mang'u Campus<br>Main Hall / LH009, Thika Road, Kenya</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-rotary-lightGrey text-rotary-cranberry flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Email Us</h4>
+                                <a href="mailto:rotaractclubofzetech@gmail.com" class="text-rotary-cranberry hover:text-rotary-gold transition-colors">rotaractclubofzetech@gmail.com</a>
+                            </div>
+                        </div>
+                       <div class="flex items-start space-x-4">
+  <div class="w-12 h-12 rounded-xl bg-rotary-lightGrey text-rotary-cranberry flex items-center justify-center text-xl flex-shrink-0">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+  <div>
+    <h4 class="font-bold text-gray-800">WhatsApp</h4>
+    <a href="https://wa.me/254799986857" target="_blank" 
+       class="text-rotary-cranberry hover:text-rotary-gold transition-colors">
+      +254 799 986857
+    </a>
+  </div>
+</div>
+
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-rotary-lightGrey text-rotary-gold flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Meeting Schedule</h4>
+                                <p class="text-sm text-gray-600">Every Thursday, 4:30 PM EAT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unified Contact & Invite Form -->
+                <div class="lg:col-span-7 bg-rotary-lightGrey p-8 sm:p-10 rounded-2xl border border-gray-200 shadow-md">
+                    <h3 class="text-2xl font-bold text-rotary-blue mb-2 font-serif-title">Send Us a Message / Invitation</h3>
+                    <p class="text-sm text-gray-600 mb-6">Fill out the form below to send an event invitation or inquire about joining the club.</p>
+
+                    <form id="unifiedForm" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Full Name / Organization *</label>
+                                <input type="text" id="fullName" required placeholder="e.g. Jane Doe / Zetech Student Board" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-rotary-blue focus:outline-none transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Email Address *</label>
+                                <input type="email" id="email" required placeholder="e.g. jane@student.zetech.ac.ke" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-rotary-blue focus:outline-none transition">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Phone / WhatsApp</label>
+                                <input type="tel" id="phone" placeholder="+254 700 000000" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-rotary-blue focus:outline-none transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Request Type *</label>
+                                <select id="requestType" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-rotary-blue focus:outline-none transition">
+                                    <option value="join">Inquire About Joining Rotaract</option>
+                                    <option value="invite">Send Event / Project Invitation</option>
+                                    <option value="partnership">Partner on Community Service</option>
+                                    <option value="other">General Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">Message / Event Details *</label>
+                            <textarea id="message" rows="4" required placeholder="Tell us about yourself, your event date, or how we can collaborate..." class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-rotary-blue focus:outline-none transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-rotary-cranberry hover:bg-rotary-darkCranberry text-white font-bold transition shadow-lg flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-paper-plane me-1"></i>
+                            <span>Submit Request / Invitation</span>
+                        </button>
+                    </form>
+
+                    <div id="formAlert" class="hidden mt-4 p-4 rounded-xl bg-green-100 border border-green-300 text-green-800 text-sm">
+                        <i class="fa-solid fa-circle-check me-2"></i> Thank you! Your request has been received. The Rotaract Club of Zetech Mang'u leadership will get back to you shortly!
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-rotary-blue text-white pt-16 pb-8 border-t-4 border-rotary-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-12 border-b border-white/10">
+                
+                <div class="space-y-4 md:col-span-1">
+                    <div class="flex items-center space-x-3">
+                        <img src="file:///C:/Users/ADMIN/Desktop/mangu/WhatsApp Image 2026-09-18 at 1.20.35 PM.jpeg" alt="Rotaract Logo" class="h-10 w-auto bg-white p-1 rounded-md" onerror="this.onerror=null; this.src='https://placehold.co/100x40/FFF/00246C?text=Rotaract';">
+                        <span class="font-bold text-lg">Rotaract Zetech Mang'u</span>
+                    </div>
+                    <p class="text-xs text-blue-200 leading-relaxed">
+                        Connecting young leaders at Zetech University Mang'u Campus through community impact, leadership development, and international fellowship.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-rotary-gold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-xs text-blue-200">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About Our Club</a></li>
+                        <li><a href="#meetings" class="hover:text-white transition">Meeting Schedule</a></li>
+                        <li><a href="#gallery" class="hover:text-white transition">Photos & Videos</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Send Invitation</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-rotary-gold text-sm uppercase tracking-wider mb-4">Areas of Focus</h4>
+                    <ul class="space-y-2 text-xs text-blue-200">
+                        <li><a href="#focus-areas" class="hover:text-white transition">Environmental Action</a></li>
+                        <li><a href="#focus-areas" class="hover:text-white transition">Education & Mentorship</a></li>
+                        <li><a href="#focus-areas" class="hover:text-white transition">Professional Development</a></li>
+                        <li><a href="#focus-areas" class="hover:text-white transition">Health & Wellness</a></li>
+                        <li><a href="https://www.rotary.org" target="_blank" class="hover:text-white transition">Rotary International</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-rotary-gold text-sm uppercase tracking-wider mb-4">Follow Our Journey</h4>
+                    <p class="text-xs text-blue-200 mb-4">Connect on social media for regular updates and event announcements.</p>
+                    <div class="flex space-x-3">
+                        <a href="https://www.instagram.com/rac_zetechmangu?stkn=MW9tNXpxNnY1bDBxZQ==" target="_blank" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-rotary-cranberry transition text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@rac_zetechmangu?_r=1&_t=ZS-99QAHPppQjB" target="_blank" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-rotary-cranberry transition text-white"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-rotary-cranberry transition text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-rotary-cranberry transition text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Disclaimer & Copyright -->
+            <div class="pt-8 text-center text-xs text-blue-300 space-y-2">
+                <p>&copy; 2026 Rotaract Club of Zetech Mang'u. All rights reserved.</p>
+                <p class="text-blue-400">Sponsored by Rotary International • District 9212 • Zetech University Mang'u Campus</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Photo Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl focus:outline-none hover:text-rotary-gold transition"><i class="fa-solid fa-xmark"></i></button>
+        <div class="max-w-4xl w-full text-center space-y-4">
+            <img id="lightbox-img" src="" alt="Enlarged gallery photo" class="max-h-[80vh] mx-auto rounded-lg shadow-2xl object-contain">
+            <p id="lightbox-caption" class="text-white text-sm font-semibold"></p>
+        </div>
+    </div>
+
+    <!-- Video Player Modal -->
+    <div id="videoModal" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4">
+        <button onclick="closeVideoModal()" class="absolute top-6 right-6 text-white text-3xl focus:outline-none hover:text-rotary-gold transition"><i class="fa-solid fa-xmark"></i></button>
+        <div class="max-w-3xl w-full aspect-video rounded-xl overflow-hidden shadow-2xl bg-black relative flex items-center justify-center">
+            <video id="player-video" controls class="w-full h-full object-contain">
+                <source id="video-source" src="" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Gallery Filter
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const tabs = document.querySelectorAll('.gallery-tab');
+
+            tabs.forEach(tab => {
+                tab.classList.remove('bg-rotary-blue', 'text-white');
+                tab.classList.add('bg-white', 'text-gray-600');
+            });
+
+            event.target.classList.remove('bg-white', 'text-gray-600');
+            event.target.classList.add('bg-rotary-blue', 'text-white');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Lightbox Functions
+        function openLightbox(src, caption) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').innerText = caption;
+            document.getElementById('lightbox').classList.remove('hidden');
+            document.getElementById('lightbox').classList.add('flex');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.add('hidden');
+            document.getElementById('lightbox').classList.remove('flex');
+        }
+
+        // Local Video Modal Functions
+        function openVideoModal(videoSrc, title) {
+            const player = document.getElementById('player-video');
+            const source = document.getElementById('video-source');
+            source.src = videoSrc;
+            player.load();
+            player.play();
+            
+            document.getElementById('videoModal').classList.remove('hidden');
+            document.getElementById('videoModal').classList.add('flex');
+        }
+
+        function closeVideoModal() {
+            const player = document.getElementById('player-video');
+            player.pause();
+            document.getElementById('videoModal').classList.add('hidden');
+            document.getElementById('videoModal').classList.remove('flex');
+        }
+
+        // Unified Contact / Invite Form Submission Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('fullName').value;
+            const alertBox = document.getElementById('formAlert');
+            
+            alertBox.classList.remove('hidden');
+            document.getElementById('unifiedForm').reset();
+            
+            setTimeout(() => {
+                alertBox.classList.add('hidden');
+            }, 7000);
+        }
+        function handleFormSubmit(event) {
+  event.preventDefault();
+
+  const fullName = document.getElementById('fullName').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const requestTypeSelect = document.getElementById('requestType');
+  const requestType = requestTypeSelect.options[requestTypeSelect.selectedIndex].text;
+  const message = document.getElementById('message').value.trim();
+
+  // Target WhatsApp phone number (must be in full international format without + or spaces)
+  const targetWhatsApp = '254799986857';
+
+  // Construct the formatted WhatsApp message
+  const formattedMessage = 
+    `*NEW INQUIRY / INVITATION*\n\n` +
+    `*Name/Org:* ${fullName}\n` +
+    `*Email:* ${email}\n` +
+    `*Phone:* ${phone || 'N/A'}\n` +
+    `*Request Type:* ${requestType}\n\n` +
+    `*Message:* \n${message}`;
+
+  // Encode message for URI string
+  const encodedMessage = encodeURIComponent(formattedMessage);
+  const whatsappUrl = `https://wa.me/${targetWhatsApp}?text=${encodedMessage}`;
+
+  // Show UI alert message
+  const alertBox = document.getElementById('formAlert');
+  if (alertBox) {
+    alertBox.classList.remove('hidden');
+  }
+
+  // Open WhatsApp in a new tab
+  window.open(whatsappUrl, '_blank');
+
+  // Reset form
+  document.getElementById('unifiedForm').reset();
+}
+// Disable right-click menu
+  document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+  // Block key combinations for DevTools (F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U)
+  document.addEventListener('keydown', (e) => {
+    if (
+      e.key === 'F12' ||
+      (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
+      (e.ctrlKey && e.key === 'u')
+    ) {
+      e.preventDefault();
+    }
+  });
+    </script>
+</body>
+</html>
